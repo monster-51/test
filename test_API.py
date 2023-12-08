@@ -27,7 +27,7 @@ api_dev_key = 'yAMu96g8htI5R4dDmLh6PfZmhyKRJd-Q'
 api_paste_code = 'test_text'
 api_paste_private = '0'  # 0=public 1=unlisted 2=private
 api_paste_name = 'Aticle'
-api_paste_expire_date = '10M'
+api_paste_expire_date = '10M' # 10M (10 min), 1D (one day), 1M (1 month) 1Y (1 Year)
 api_paste_format = 'json'
 api_user_key = ''  # Так надо
 api_option = 'paste'
