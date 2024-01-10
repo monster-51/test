@@ -20,6 +20,7 @@ def create_pastebin(api_dev_key, api_paste_code, api_paste_private, api_paste_na
     if response.text.startswith('Bad API request'):
         print('Ошибка при отправке запроса на внешний сервис.', response.text)
     else:
+        print(f"Код ответа: {response.status_code}")
         print('Пост успешно создан. URL:', response.text)
 
 # Данные для доступа к API Pastebin.com
