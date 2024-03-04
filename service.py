@@ -81,7 +81,7 @@ def process_queue_wrapper(queue_data):
     search_and_send_retry(data)
 
 if __name__ == '__main__':
-    with Pool(1) as pool:  # Ограничение на 4 процесса
+    with Pool(1) as pool:  # Ограничение на 1 процесс
         while True:
             queue_data = redis_client.blpop('search_queue')
             if queue_data:

@@ -16,7 +16,8 @@ client = Client(
 )
 
 query = "SELECT * FROM user_data"
-result = client.execute(query)
+result =client.execute(query)
+print(f"Код ответа: {result}")
 
 for row in result:
     print(row)
